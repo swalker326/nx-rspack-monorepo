@@ -14,7 +14,10 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@nx-rspack-monorepo/ui": ["packages/shared/ui/src/index.ts"],
+      "remote/Module": ["apps/remote/src/remote-entry.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
