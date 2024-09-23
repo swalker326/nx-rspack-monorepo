@@ -5,6 +5,7 @@ import {
 } from '@nx/rspack/module-federation';
 
 import baseConfig from './module-federation.config';
+import { withZephyr } from "zephyr-webpack-plugin";
 
 const prodConfig: ModuleFederationConfig = {
   ...baseConfig,
@@ -35,7 +36,8 @@ const prodConfig: ModuleFederationConfig = {
  * Learn more about the DTS Plugin here: https://module-federation.io/configure/dts.html
  */
 export default composePlugins(
-  withNx(),
-  withReact(),
-  withModuleFederation(prodConfig, { dts: false })
+	withNx(),
+	withReact(),
+	withModuleFederation(prodConfig, { dts: false }),
+	withZephyr(),
 );

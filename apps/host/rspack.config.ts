@@ -1,13 +1,14 @@
-import { composePlugins, withNx, withReact } from '@nx/rspack';
+import { composePlugins, withNx, withReact } from "@nx/rspack";
 import {
-  withModuleFederation,
-  ModuleFederationConfig,
-} from '@nx/rspack/module-federation';
+	withModuleFederation,
+	ModuleFederationConfig,
+} from "@nx/rspack/module-federation";
 
-import baseConfig from './module-federation.config';
+import baseConfig from "./module-federation.config";
+import { withZephyr } from "zephyr-webpack-plugin";
 
 const config: ModuleFederationConfig = {
-  ...baseConfig,
+	...baseConfig,
 };
 
 // Nx plugins for rspack to build config object from Nx options and context.
@@ -17,7 +18,8 @@ const config: ModuleFederationConfig = {
  * Learn more about the DTS Plugin here: https://module-federation.io/configure/dts.html
  */
 export default composePlugins(
-  withNx(),
-  withReact(),
-  withModuleFederation(config, { dts: false })
+	withNx(),
+	withReact(),
+	withModuleFederation(config, { dts: false }),
+	withZephyr(),
 );
