@@ -3,7 +3,7 @@ export default function FeedRoute() {
 		<div>
 			<h1 className="text-5xl">Remote App</h1>
 			<p>
-				App mounted from{" "}
+				This is a remote served via module federation with live reload?:{" "}
 				<pre>
 					<code>/apps/remote/routes/index.tsx</code>
 				</pre>

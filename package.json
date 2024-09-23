@@ -3,14 +3,15 @@
 	"version": "0.0.0",
 	"license": "MIT",
 	"scripts": {
-		"dev": "nx run host:serve --devRemote=remote"
+		"dev": "nx serve host --devRemotes=remote"
 	},
 	"private": true,
 	"dependencies": {
 		"react": "18.3.1",
 		"react-dom": "18.3.1",
 		"react-router-dom": "6.26.2",
-		"tslib": "^2.3.0"
+		"tslib": "^2.3.0",
+		"zephyr-webpack-plugin": "^0.0.19"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.14.5",

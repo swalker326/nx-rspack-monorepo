@@ -1,6 +1,6 @@
 import { Link, Outlet } from "react-router-dom";
 
-export default function Root() {
+export default function RootIndex() {
 	return (
 		<div className="flex flex-col">
 			<div className="text-white p-3 bg-gray-800 min-h-8 flex items-center justify-between">

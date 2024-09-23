@@ -1,8 +1,7 @@
 export function App() {
 	return (
-		<div>
-			<h1 className="text-5xl">Welcome to the remote...</h1>
-			<h3>Hotness</h3>
+		<div className="border border-red-500">
+			<h1 className="text-3xl">I'm a remote component served from</h1>
 		</div>
 	);
 }
