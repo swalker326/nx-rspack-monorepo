@@ -9,6 +9,7 @@ import { withZephyr } from "zephyr-webpack-plugin";
 
 const config: ModuleFederationConfig = {
 	...baseConfig,
+	remotes: [["remote/routes", "http://localhost:3001/"]],
 };
 
 // Nx plugins for rspack to build config object from Nx options and context.

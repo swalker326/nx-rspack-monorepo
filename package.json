@@ -1,9 +1,9 @@
 {
-	"name": "@nx-rspack-monorepo/source",
+	"name": "nx-rspack-monorepo",
 	"version": "0.0.0",
 	"license": "MIT",
 	"scripts": {
-		"dev": "nx serve host --devRemotes=remote"
+		"dev": "nx serve host --devRemotes=remote --verbose"
 	},
 	"private": true,
 	"dependencies": {
